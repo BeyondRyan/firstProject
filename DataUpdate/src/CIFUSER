@@ -1,0 +1,51 @@
+INSERT INTO `cif`.`user` (`id`, `passwd`, `email`, `cellphone`,`tag_one_merge`, `tag_two_merge`, `tag_three_merge`, `tag_one`, `tag_two`, `tag_three`, `gmt_create`, `gmt_modified`) VALUES 
+('SGDR0000100698A000', 'e10adc3949ba59abbe56e057f20f883e', 'goodsownerA@163.com', NULL,  '11000000000000000000', '01000000000000000000', '00000000000000000000', '11000000000000000000', '01000000000000000000', '00000000000000000000', now(),now()),
+('SGDR0000100699A000', 'e10adc3949ba59abbe56e057f20f883e', 'snshop1@163.com', '18912950331',  '11000000000000000000', '01000000000000000000', '00000000000000000000', '11000000000000000000', '01000000000000000000', '00000000000000000000', now(),now()),
+('SGDR0000100700A000', 'e10adc3949ba59abbe56e057f20f883e', 'goodsownerD@163.com', '15803080310',  '11000000000000000000', '01000000000000000000', '00000000000000000000', '11000000000000000000', '01000000000000000000', '00000000000000000000', now(),now()),
+('SGDR0000100701A000', 'e10adc3949ba59abbe56e057f20f883e', 'goodsownerE@163.com', '15803080311',  '11000000000000000000', '01000000000000000000', '00000000000000000000', '11000000000000000000', '01000000000000000000', '00000000000000000000', now(),now()),
+('SGDR0000100702A000', 'e10adc3949ba59abbe56e057f20f883e', 'goodsownerF@163.com', '15803080312',  '11000000000000000000', '01000000000000000000', '00000000000000000000', '11000000000000000000', '01000000000000000000', '00000000000000000000', now(),now()),
+('SGDR0000100703A000', 'e10adc3949ba59abbe56e057f20f883e', 'goodsownerG@163.com', '15803080313',  '11000000000000000000', '01000000000000000000', '00000000000000000000', '11000000000000000000', '01000000000000000000', '00000000000000000000', now(),now()),
+('SGDR0000100704A000', 'e10adc3949ba59abbe56e057f20f883e', 'platgo@163.com', NULL,  '11000000000000000000', '01000000000000000000', '00000000000000000000', '11000000000000000000', '01000000000000000000', '00000000000000000000', now(),now());
+
+
+
+UPDATE `uic`.`user` SET `cif_user_id`='SGDR0000100698A000' WHERE `id`='D0000000436048A000';
+UPDATE `uic`.`user` SET `cif_user_id`='SGDR0000100699A000' WHERE `id`='D0000000436112A000';
+UPDATE `uic`.`user` SET `cif_user_id`='SGDR0000100700A000' WHERE `id`='D0000000436114A000';
+UPDATE `uic`.`user` SET `cif_user_id`='SGDR0000100701A000' WHERE `id`='D0000000436115A000';
+UPDATE `uic`.`user` SET `cif_user_id`='SGDR0000100702A000' WHERE `id`='D0000000436116A000';
+UPDATE `uic`.`user` SET `cif_user_id`='SGDR0000100703A000' WHERE `id`='D0000000436117A000';
+UPDATE `uic`.`user` SET `cif_user_id`='SGDR0000100704A000' WHERE `id`='PLATFORM_GO_USER_A000';
+
+
+
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436024A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436025A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436027A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436032A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436033A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436034A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436035A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436036A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='D0000000436039A000';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='lijing';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='lijing1';
+UPDATE `uic`.`user` SET `user_authentication_tag`='11000100000000000000', `disperse_authentication_tag`='11000100000000000000' WHERE `id`='lijing2';
+
+
+
+
+
+INSERT INTO `cif`.`identity` (`id`, `front_card_photo`, `back_card_photo`, `status`, `sex`, `name`, `identity_code`, `user_id`, `gmt_create`, `gmt_modified`) VALUES 
+('DRSM00001000225A000', null, null, '3', '男', '张巧玲', '330781199406290000', 'CYTI0000069002A000',  now(),now()),
+('DRSM00001000226A000', null, null, '3', '男', '测试货主D', '3307811994062900', 'SGDR0000100700A000',  now(),now()),
+('DRSM00001000227A000', null, null, '3', '男', '测试货主E', '330781199406290', 'SGDR0000100701A000',  now(),now()),
+('DRSM00001000228A000', null, null, '3', '男', '测试货主F', '33078119940629000', 'SGDR0000100702A000',  now(),now()),
+('DRSM00001000229A000', null, null, '3', '男', '测试货主G', '3307811994062', 'SGDR0000100703A000',  now(),now()),
+('DRSM00001000230A000', null, null, '3', '男', '平台货主', null, 'SGDR0000100704A000',  now(),now()),
+('DRSM00001000231A000', null, null, '3', '男', '蒋晓辉', '330722197905192000', 'SGDR0000100674A000',  now(),now()),
+('DRSM00001000232A000', null, null, '3', '男', '货主7', '339005199310896000', 'SGDR0000100683A000',  now(),now()),
+('DRSM00001000233A000', null, null, '3', '男', '货主测试A', '339003199110816000', 'SGDR0000100698A000',  now(),now()),
+('DRSM00001000234A000', null, null, '3', '男', '货主测试B', '339003199110816000', 'CYTI0000059004A000',  now(),now()),
+('DRSM00001000235A000', null, null, '3', '男', '胡恒滔', '339005191111196000', 'SGDR0000100699A000',  now(),now());
+
